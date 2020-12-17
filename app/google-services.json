@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "436242566374",
+    "firebase_url": "https://app-plataforma-ead.firebaseio.com",
+    "project_id": "app-plataforma-ead",
+    "storage_bucket": "app-plataforma-ead.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436242566374:android:a8237081cc91ffd7b47f27",
+        "android_client_info": {
+          "package_name": "com.italo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436242566374-rnqmtenc803h1cev3cbpfjc4b1fu4ria.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.italo.app",
+            "certificate_hash": "4f019aa96d85abcd810d5f1ed5f33eb9e1dab62b"
+          }
+        },
+        {
+          "client_id": "436242566374-cjbcnpddorgi7heeg9gc9va4v15ksh64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFgTzMkMM_20tYhHLIPr0pDJEqnKGdOcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436242566374-cjbcnpddorgi7heeg9gc9va4v15ksh64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
