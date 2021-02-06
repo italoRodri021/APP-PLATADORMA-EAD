@@ -14,45 +14,45 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activitys.InicioActivity"></activity>
+        <activity android:name=".activity.StartActivity"></activity>
         <activity
-            android:name=".activitys.IntroActivity"
+            android:name=".activity.IntroActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Intro" />
         <activity
-            android:name=".activitys.MainActivity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitys.BoasVindasActivity"
+            android:name=".activity.WelcomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitys.NotasActivity"
+            android:name=".activity.NotesEvaluationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TootbarTelas" />
         <activity
-            android:name=".activitys.AvaliacaoActivity"
+            android:name=".activity.EvaluationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TootbarTelas" />
         <activity
-            android:name=".activitys.PlayerVideoActivity"
+            android:name=".activity.PlayerVideoActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".activitys.MenuAulasActivity"
+            android:name=".activity.MenuClassActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TootbarTelas" />
         <activity
-            android:name=".activitys.MeusCursosActivity"
+            android:name=".activity.MyCoursesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TootbarTelas" />
         <activity
-            android:name=".activitys.DetalhesCursoActivity"
+            android:name=".activity.DetailsCourseActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TootbarTelas" />
         <activity
-            android:name=".activitys.EditarPerfilActivity"
+            android:name=".activity.EditProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitys.SplashActivity"
+            android:name=".activity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

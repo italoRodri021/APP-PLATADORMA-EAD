@@ -4,24 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.PlayerVideoActivity">
+    tools:context=".activity.EvaluationActivity">
 
-    <VideoView
-        android:id="@+id/videoViewTelaCheia"
+
+    <WebView
+        android:id="@+id/webViewProva"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDataHoraProva" />
 
-    <ProgressBar
-        android:id="@+id/progressBarPlayer"
-        style="@android:style/Widget.DeviceDefault.ProgressBar"
+    <TextView
+        android:id="@+id/textViewDataHoraProva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/videoViewTelaCheia"
+        android:layout_marginTop="8dp"
+        android:text="Prova"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/videoViewTelaCheia" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

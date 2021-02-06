@@ -3,6 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.italo.sistemaead.activitys.IntroActivity">
+    tools:context="com.italo.sistemaead.activity.IntroActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
