@@ -58,7 +58,7 @@
         android:elevation="3dp"
         android:text="Nome do curso"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewIconeCursoMeusCursos"
         app:layout_constraintEnd_toEndOf="@+id/cardView8"
         app:layout_constraintStart_toEndOf="@+id/imageViewIconeCursoMeusCursos"

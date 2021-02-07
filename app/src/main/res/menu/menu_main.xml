@@ -6,7 +6,7 @@
         android:id="@+id/itemAcaoMeusCursos"
         android:iconTint="@android:color/white"
         android:title="Meus Cursos"
-        android:icon="@drawable/ic_marcador"
+        android:icon="@drawable/ic_marker"
         app:showAsAction="ifRoom"
 
         />

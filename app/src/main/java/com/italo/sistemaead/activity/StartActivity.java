@@ -34,7 +34,7 @@ public class StartActivity extends AppCompatActivity {
         configInterface();
     }
 
-    public void configInterface(){
+    public void configInterface() {
 
         final ViewGroup root = findViewById(R.id.frameConteudoInicio);
 
@@ -42,10 +42,10 @@ public class StartActivity extends AppCompatActivity {
 
             TransitionManager.beginDelayedTransition(root, new Slide());
 
-            if (frameContentStart.getVisibility() == View.INVISIBLE){
+            if (frameContentStart.getVisibility() == View.INVISIBLE) {
                 frameContentStart.setVisibility(View.VISIBLE);
                 btnContinue.setText("VOLTAR");
-            }else {
+            } else {
                 frameContentStart.setVisibility(View.INVISIBLE);
                 btnContinue.setText("CONTINUAR");
             }
@@ -64,11 +64,11 @@ public class StartActivity extends AppCompatActivity {
 
             TransitionManager.beginDelayedTransition(root, new Slide());
 
-            if (frameContentStart.getVisibility() == View.INVISIBLE){
+            if (frameContentStart.getVisibility() == View.INVISIBLE) {
                 frameContentStart.setVisibility(View.VISIBLE);
                 btnContinue.setText("VOLTAR");
 
-            }else {
+            } else {
                 frameContentStart.setVisibility(View.INVISIBLE);
                 btnContinue.setText("CONTINUAR");
 

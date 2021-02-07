@@ -16,6 +16,7 @@ import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -41,12 +42,13 @@ public class EditProfileActivity extends AppCompatActivity {
     private static final int GALERY = 100;
     private ImageView imagePhoto;
     private EditText editName, editRegistration, editEmail;
-    private Button btnCamera, btnGalery, btnSave;
+    private Button btnSelectPhoto, btnSave;
     private DatabaseReference database;
     private StorageReference storage;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
     private String idCurrentUser;
+    private AlertDialog.Builder alertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,27 +132,26 @@ public class EditProfileActivity extends AppCompatActivity {
 
     public void configInterface() {
 
-        btnCamera.setOnClickListener(view -> {
+        btnSelectPhoto.setOnClickListener((v) -> {
 
-            Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            if (i.resolveActivity(getPackageManager()) != null) {
-                startActivityForResult(i, CAMERA);
-                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-            }
+            alertDialog.setTitle("Selecione uma foto")
+                    .setPositiveButton("CÂMERA", (dialog, which) -> {
+
+                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        if (i.resolveActivity(getPackageManager()) != null) {
+                            startActivityForResult(i, CAMERA);
+                        }
+
+                    }).setNegativeButton("GALERIA", (dialog, which) -> {
+
+                Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                if (i.resolveActivity(getPackageManager()) != null) {
+                    startActivityForResult(i, GALERY);
+                }
+
+            }).create().show();
 
         });
-
-        btnGalery.setOnClickListener(view -> {
-
-            Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            if (i.resolveActivity(getPackageManager()) != null) {
-                startActivityForResult(i, GALERY);
-                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-
-            }
-
-        });
-
 
     }
 
@@ -183,12 +184,12 @@ public class EditProfileActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toobarEditarPerfil);
         imagePhoto = findViewById(R.id.imageViewEditarPerfil);
         btnSave = findViewById(R.id.btnSalvarEditarPerfil);
-        btnCamera = findViewById(R.id.btnCameraEditarPerfil);
-        btnGalery = findViewById(R.id.btnGaleriaEditarPerfil);
+        btnSelectPhoto = findViewById(R.id.btnSelecionarFotoEditPerfil);
         editName = findViewById(R.id.editTextNomeEditarPerfil);
         editRegistration = findViewById(R.id.editTextMatriculaEditarPerfil);
         editEmail = findViewById(R.id.editTextCampoEmailEditarPerfil);
         progressBar = findViewById(R.id.progressBarEditarPerfil);
+        alertDialog = new AlertDialog.Builder(this);
         setSupportActionBar(toolbar);
 
         Permissions.validatePermissions(Permissions.getPermissionsUser, EditProfileActivity.this, 1);
@@ -202,7 +203,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_editar_perfil, menu);
+        getMenuInflater().inflate(R.menu.menu_edit_profile, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

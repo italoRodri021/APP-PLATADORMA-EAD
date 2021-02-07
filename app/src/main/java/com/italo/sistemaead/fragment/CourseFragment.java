@@ -34,7 +34,7 @@ import java.util.List;
 public class CourseFragment extends Fragment {
 
     private final List<Course> listCourses = new ArrayList<>();
-    int[] banners = {R.drawable.imagem_banner, R.drawable.banner_2, R.drawable.banner_3, R.drawable.banner_1};
+    int[] banners = {R.drawable.image_banner, R.drawable.banner_slide_2, R.drawable.banner_slide_3, R.drawable.banner_slide_1};
     private RecyclerView recyclerCourses;
     private ProgressBar progressBar;
     private CarouselView carouselView;

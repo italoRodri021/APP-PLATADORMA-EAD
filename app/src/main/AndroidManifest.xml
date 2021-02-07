@@ -28,26 +28,26 @@
         <activity
             android:name=".activity.NotesEvaluationActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/TootbarTelas" />
+            android:theme="@style/ToobarThemeEAD" />
         <activity
             android:name=".activity.EvaluationActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/TootbarTelas" />
+            android:theme="@style/ToobarThemeEAD" />
         <activity
             android:name=".activity.PlayerVideoActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".activity.MenuClassActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/TootbarTelas" />
+            android:theme="@style/ToobarThemeEAD" />
         <activity
             android:name=".activity.MyCoursesActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/TootbarTelas" />
+            android:theme="@style/ToobarThemeEAD" />
         <activity
             android:name=".activity.DetailsCourseActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/TootbarTelas" />
+            android:theme="@style/ToobarThemeEAD" />
         <activity
             android:name=".activity.EditProfileActivity"
             android:screenOrientation="portrait" />

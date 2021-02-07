@@ -10,7 +10,7 @@
 
     </style>
 
-    <style name="TootbarTelas" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="ToobarThemeEAD" parent="Theme.AppCompat.Light.DarkActionBar">
 
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagem_banner" />
+        app:srcCompat="@drawable/image_banner" />
 
     <TextView
         android:id="@+id/textViewTituloCursoDetalhes"
@@ -127,7 +127,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/shape_botao_grandient"
+        android:background="@drawable/shape_button_grandient"
         android:foreground="?attr/selectableItemBackground"
         android:text="Adicionar aos meus cursos"
         android:textColor="#FFFFFF"
